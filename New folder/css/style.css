@@ -1,0 +1,59 @@
+/* БАЗА */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+/* КАРТОЧКИ */
+div {
+    width: 90%;
+    margin: 15px auto;
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+div:hover {
+    transform: scale(1.02);
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.label {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* ПЛАНШЕТ */
+@media screen and (min-width: 772px) {
+    div {
+        width: 45%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    img {
+        max-height: 30vh;
+        width: auto;
+        max-width: 100%;
+    }
+}
+
+/* БОЛЬШОЙ ЭКРАН */
+@media screen and (min-width: 998px) {
+    div {
+        width: 30%;
+    }
+}
